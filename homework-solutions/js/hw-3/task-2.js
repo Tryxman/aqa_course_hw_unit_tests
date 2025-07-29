@@ -4,3 +4,14 @@
 n + nn + nnn, где n не перемножаются, а конкатенируются
 
 */
+
+function concat(n) {
+  let textN = String(n);
+  if (n >= 1 && n <= 9) {
+    console.log(n + String(Number(textN) + Number(textN)) + String(Number(textN) + Number(textN) + Number(textN)));
+  } else {
+    console.log('Number is outside the range');
+  }
+}
+
+concat(3);
