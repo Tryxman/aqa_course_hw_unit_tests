@@ -5,14 +5,13 @@ n + nn + nnn, где n не перемножаются, а конкатенир�
 
 */
 
-function concat(n) {
-  let textN = String(n);
+function sumNumbersAsDigits(n) {
+  const textN = String(n);
   if (n >= 1 && n <= 9) {
-    console.log(n + Number(textN + textN) + Number(textN + textN + textN));
+    return n + Number(textN + textN) + Number(textN + textN + textN);
   } else {
     console.log('Number is outside the range');
   }
-  return n;
 }
 
-concat(3);
+console.log(sumNumbersAsDigits(3));
