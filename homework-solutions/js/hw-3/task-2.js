@@ -5,7 +5,7 @@ n + nn + nnn, где n не перемножаются, а конкатенир�
 
 */
 
-function sumNumbersAsDigits(n) {
+function sumStringsAsDigits(n) {
   const textN = String(n);
   if (n >= 1 && n <= 9) {
     return n + Number(textN + textN) + Number(textN + textN + textN);
