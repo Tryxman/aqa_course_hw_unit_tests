@@ -25,4 +25,4 @@ function checkAge(age) {
   }
 }
 
-checkAge('abc');
+checkAge(2n);

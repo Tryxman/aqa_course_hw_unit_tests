@@ -20,7 +20,7 @@ let maxAge = 60;
 let age;
 
 function isValidAge(value) {
-  return typeof value === 'number';
+  return typeof value === 'number' && !isNaN(value);
 }
 
 function checkAge(age) {
@@ -37,4 +37,4 @@ function checkAge(age) {
   }
 }
 
-checkAge(0);
+checkAge(12);
