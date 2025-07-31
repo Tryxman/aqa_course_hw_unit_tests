@@ -20,7 +20,7 @@ let maxAge = 60;
 let age;
 
 function isValidAge(value) {
-  return typeof value === 'number' && Number(value);
+  return typeof value === 'number';
 }
 
 function checkAge(age) {
@@ -37,4 +37,4 @@ function checkAge(age) {
   }
 }
 
-checkAge('abc');
+checkAge(0);
