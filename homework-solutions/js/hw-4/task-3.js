@@ -11,8 +11,12 @@ let minAge = 18;
 let maxAge = 60;
 let age;
 
+function isValidAge(value) {
+  return typeof value !== 'number' && !isNaN(value);
+}
+
 function checkAge(age) {
-  if (!Number(age)) {
+  if (!isValidAge(age)) {
     console.log(`Incorrect data type`);
   } else if (age < minAge) {
     console.log(`You don't have access cause your age is " + age + "It's less then '${minAge}'`);
@@ -25,4 +29,4 @@ function checkAge(age) {
   }
 }
 
-checkAge(2n);
+checkAge(0);
