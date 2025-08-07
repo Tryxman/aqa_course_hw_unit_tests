@@ -16,7 +16,7 @@ for (let i = 0; i < lettersToLowerCase.length; i++) {
   if (/[^a-zA-Z]/.test(char)) {
     continue;
   }
-  if (vowelLetters.includes(lettersToLowerCase[i])) {
+  if (vowelLetters.includes(char)) {
     vowels++;
   } else {
     consonants++;
