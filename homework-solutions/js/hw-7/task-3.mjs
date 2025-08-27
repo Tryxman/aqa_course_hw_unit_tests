@@ -9,7 +9,16 @@
 */
 
 function digitalRoot(number) {
-  // Ваш код
+  let res = 0;
+  let digits = String(number).split('');
+  for (const dig of digits) {
+    res += Number(dig);
+  }
+  if (res <= 9) {
+    return res;
+  } else {
+    return digitalRoot(res);
+  }
 }
 
 export { digitalRoot };
