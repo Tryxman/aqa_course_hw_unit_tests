@@ -7,7 +7,12 @@
 */
 
 function findMissingNumber(numbers) {
-  // Ваш код
+  numbers.sort((a, b) => a - b);
+  const maxCount = numbers.length + 1;
+  const expectedCount = (maxCount * (maxCount + 1)) / 2;
+  const value = numbers.reduce((acc, el) => acc + el, 0);
+  return expectedCount - value;
 }
-
+let arr = [1, 2, 3, 5, 6, 7];
+console.log(findMissingNumber(arr));
 export { findMissingNumber };
