@@ -96,7 +96,7 @@ class Company {
 
   getInfo() {
     const info =
-      `Компания: ${this.title}\n` + `Адрес: ${this.address}\n` + `Количество сотрудников: ${this.#employees.length}`;
+      `Company: ${this.title}\n` + `Address: ${this.address}\n` + `Employee count: ${this.#employees.length}`;
     return info;
   }
 }
