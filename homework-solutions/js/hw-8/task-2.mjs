@@ -20,7 +20,10 @@ const words = [
 const vowels = ['a', 'e', 'o', 'u', 'i'];
 
 function countVowels(word) {
-  return word.split('').filter((char) => vowels.includes(char)).length;
+  return word
+    .toLowerCase()
+    .split('')
+    .filter((char) => vowels.includes(char)).length;
 }
 
 function sortedByVowels(wordsArr) {
