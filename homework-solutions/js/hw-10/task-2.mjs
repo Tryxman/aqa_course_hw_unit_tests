@@ -8,7 +8,10 @@
 */
 
 function countOccurrences(arr) {
-  // ваш код
+  return arr.reduce((acc, el) => {
+    acc[el] = (acc[el] || 0) + 1;
+    return acc;
+  }, {});
 }
 
 export { countOccurrences };
