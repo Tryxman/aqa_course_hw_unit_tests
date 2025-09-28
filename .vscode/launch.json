@@ -10,6 +10,14 @@
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${file}"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run TypeScript with ts-node",
+      "program": "${workspaceFolder}/node_modules/ts-node/dist/bin.js",
+      "args": ["${relativeFile}"],
+      "cwd": "${workspaceFolder}"
     }
   ]
 }
