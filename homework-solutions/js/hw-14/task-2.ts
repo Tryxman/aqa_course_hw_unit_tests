@@ -7,7 +7,7 @@
 type MapCallback<T, U> = (value: T, index: number, array: T[]) => U;
 
 function genericMap<T, U>(array: T[], callback: MapCallback<T, U>): U[] {
-  return array.reduce<U[]>((arr, value, i, arr) => {
+  return array.reduce<U[]>((acc, value, i, arr) => {
     acc.push(callback(value, i, arr));
     return acc;
   }, []);
